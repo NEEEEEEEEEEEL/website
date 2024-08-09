@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Debnil Sarkar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div><div class="logo">Debnil Sarkar</div></div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+    </div>
+   </nav>
+   <section id="profile">
+    <div class="section__pic-container">
+        <img src="assets\profile-pic.png" alt="Debnil Profile Picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Debnil Sarkar</h1>
+        <p class="section__text__p2">Computer Science Student</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick='window.open("Personal-Portfolio/assets/Resume.pdf")'>Download Resume</button>
+            <button class="btn btn-color-1" onclick='location.href="./#contact"'>Contact info</button>
+        </div>
+        <div id="socials-container">
+            <img src="\assets\linkedin.png" alt="linkedin Profile" class="icon" onclick="window.open('https://www.linkedin.com/in/debnil-s-970963109/')">
+            <img src="\assets\github.png" alt="Github Profile" class="icon" onclick="window.open('https://github.com/NEEEEEEEEEEEL')">
+        </div>
+    </div> 
+   </section>
+   <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="\assets\about-pic.jpg" alt="Profile Pic" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                     <img src="\assets\experience.png" alt="Experience Icon" class="icon"> 
+                     <h3>Experience</h3>
+                     <p>Fresher</p>
+                </div>
+                <div class="details-container">
+                     <img src="\assets\education.png" alt="Education Icon" class="icon"> 
+                     <h3>Education</h3>
+                     <p>B.Sc. Computer Science<br>M.Sc. Compute Science(2nd year)</p>  
+                </div>
+            </div>
+            <div class="text-container">
+                <p class="brief">I am a Master’s student in Computer Science, driven by an insatiable curiosity for technology and a passion for pushing the boundaries of innovation. My journey into the world of computers began in 2019, igniting a spark that has fueled my relentless pursuit of knowledge. With a solid foundation in AI, Machine Learning, Deep Learning, and Generative AI, I am proficient in Python and constantly expanding my skill set. I thrive on the challenge of complex problems and am eager to contribute my expertise to groundbreaking projects. I am a collaborative team player, seeking opportunities to learn from industry professionals and make a meaningful impact on the tech landscape.
+
+                    Let's harness the power of technology to create a better future.</p>
+            </div>
+        </div>
+    </div>
+    <img src="\assets\arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Projects'">
+   </section>
+   <section id="Projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="\assets\bot.png" alt="Project 1" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">DataDive</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/NEEEEEEEEEEEL/Information-retrieval-APP')">
+                    Github
+                </button>
+            </div>
+        </div>
+            <div class="details-container color-container">
+            <div class="article-container">
+                <img src="\assets\ai.png" alt="Project 2" class="project-img">
+            </div>
+            <h2 class="experience-sub-title project-title">ScorePredict</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/NEEEEEEEEEEEL/PredictYourScore')">
+                    Github
+                </button>
+            </div>
+        </div>
+        </div>
+    </div>
+   <img src="\assets\arrow.png" alt="Arrow icon" class="icon arrow" onclick="window.open('./#contact')">
+   </section>
+   <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="\assets\email.png" alt="Email Icon" class="icon email-icon contact-icon">
+            <p><a href="mailto:debnilsarkar72300@gmail.com">debnilsarkar72300@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+            <img src="\assets\linkedin.png" alt="linkedin Icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/debnil-s-970963109/">linkedIn</a></p>
+        </div>
+    </div>
+   </section>
+   <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Debnil Sarkar All Rights Reserved.</p>
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>
